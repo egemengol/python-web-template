@@ -1,0 +1,18 @@
+[project]
+name = "python-web-template"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "asyncpg>=0.29.0",
+    "fastapi[standard]>=0.115.2",
+    "loguru>=0.7.2",
+]
+
+[tool.uv]
+dev-dependencies = ["ruff>=0.7.0"]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
